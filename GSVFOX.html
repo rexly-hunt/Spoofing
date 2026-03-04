@@ -36,7 +36,7 @@ function waitForVoices() {
       speechSynthesis.onvoiceschanged = () => {
         resolve(speechSynthesis.getVoices());
       };
-      setTimeout(() => resolve([]), 1000);
+      setTimeout(() => resolve([]), 10000);
     }
   });
 }
