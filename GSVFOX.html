@@ -5,75 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speech + Redirect - Firefox Support</title>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    padding: 50px;
   }
-  
-  h2 {
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  }
-  
   button {
-    padding: 18px 35px;
-    font-size: 18px;
+    padding: 15px 30px;
+    font-size: 20px;
     cursor: pointer;
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-    font-weight: bold;
   }
-  
-  button:hover {
-    background: #ff5252;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  }
-  
-  button:active {
-    transform: translateY(0);
-  }
-  
-  .status {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.2);
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .status.show {
-    opacity: 1;
-  }
-  
-  .fallback-msg {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #ffeaa7;
-    font-style: italic;
-  }
-</style>
 </head>
 <body>
 
